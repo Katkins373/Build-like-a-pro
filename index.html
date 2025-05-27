@@ -1,73 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<link rel="stylesheet" href="styles.css">
-<script src="https://kit.fontawesome.com/cfa1b39128.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/cfa1b39128.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAV BAR -->
     <section id="landing-page">
-    <nav>
+      <nav>
         <figure>
-            <img id="personal-logo" src="./assets/logo.svg" alt="">
+          <img id="personal-logo" src="./assets/logo.svg" alt="" />
         </figure>
         <ul class="nav__link--list">
-            <li class="nav__link">
-                <a href="#" class=
-                "nav__link--anchor
-                link__hover-effect 
-                link__hover-effect--black
-                ">About</a>
-            </li>
-            
-            <li class="nav__link">
-                <a href="#" class=
-                "nav__link--anchor
-                link__hover-effect 
-                link__hover-effect--black
-                ">Projects</a>
-            </li>
-            
-            <li class="nav__link">
-                <a href="#" class=
-                "nav__link--anchor
-                link__hover-effect 
-                link__hover-effect--black
-                ">Contacts</a>
-            </li>
-            <li class="nav__link">
-                <a href="#" class=
-                "nav__link--anchor
-                link__hover-effect 
-                link__hover-effect--black
-                "><i class="fa-solid fa-circle-half-stroke"></i></a>
-            </li>
+          <li class="nav__link click">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+
+          <li class="nav__link click">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+
+          <li class="nav__link click">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contacts</a
+            >
+          </li>
+          <li class="nav__link click">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
         </ul>
-    </nav>
-<header class="header">
-<div class="header__content">
-    <h1 class="title">Hey</h1>
-    <h1 class="title green">I'm Kyle</h1>
-    <p class="header__para">
-        I'm a <b class="green">Frontend End Software Engineer</b> with a passion for creating beautiful and functional user interfaces. I love to learn new technologies and improve my skills. I'm currently looking for new opportunities to grow and make an impact in the tech world.
-        <br>
-        Here is more <b class="green">about me!</b>
-    </p>
-    <div class="social__list">
-        <a href="#" class="social__link click">
-            <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/Katkins373?tab=repositories" class="social__link click">
-       <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="#" class="social__link click">
-        <i class="fa-regular fa-file-lines"></i>
-        </a>
-    </div>
-</div>
-</header>
+      </nav>
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title green">I'm Kyle</h1>
+          <p class="header__para">
+            I'm a <b class="green">Frontend End Software Engineer</b> with a
+            passion for creating beautiful and functional user interfaces. I
+            love to learn new technologies and improve my skills. I'm currently
+            looking for new opportunities to grow and make an impact in the tech
+            world.
+            <br />
+            Here is more <b class="green">about me!</b>
+          </p>
+
+          <!-- SOCIALS -->
+          <div class="social__list">
+            <a
+              href="https://google.com"
+              target="=_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/Katkins373?tab=repositories"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="./assets/David Bragg Resume.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-regular fa-file-lines"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <button class="mail__btn click">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+
+<!-- MODAL -->
+
+      <div class="modal">
+        <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me</h3>    
+        <h4 class="modal__sub-title modal__sub-title--about">Software Engineer</h4>
+        <p class="modal__para">
+            My name is Kyle Atkins, I'm a 24-year-old <b class="green">Software Engineer </b>with a strong background in <b class="green">HTML, CSS, JavaScript, and React.</b> I've always had a <b class="green">passion</b> for technology and coding, specifaclly because I am an avid gamer which led me into software development. 
+       <br>
+            Now, I'm exploring <b class="green">new career opportunities</b> where I can apply my skills in fresh and meaningful ways. This E-Portfolio showcases <b class="green"> my experience, projects, and the journey</b> that brought me here as I take the <b class="green">next step</b> in my professional career.
+        </p>
+        <div class="modal__languages">
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://img.icons8.com/color/100/html-5--v1.png" alt="html-5--v1"/>
+            <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://img.icons8.com/fluency/100/css3.png" alt="css3"/>
+           <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://img.icons8.com/fluency/100/javascript.png" alt="javascript"/>
+           <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/100/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>
+         <span class="language__name">React</span>
+            </div>
+        </div>
+        <div class="modal__half modal__contact">Let's have a chat!</div>
+      </div>
     </section>
-</body>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="green">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project"><div class="project__wrapper">
+                <img src="./assets/blinker mockup.png" class="project__img" alt=""/>
+                <div class="project__wrapper--bg"></div>
+        <div class="project__description">
+            <h3 class="project__description--title">
+                Car Sales Project
+            </h3>
+            <h4 class="project__description--sub-title">
+                HTML, CSS, JavaScript, Vue, Vuex
+            </h4>
+            <p class="project__description--para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum atque, facere quo cupiditate laborum veniam doloremque provident suscipit ea labore accusamus illo unde quas. Quasi, voluptatibus sed quaerat in possimus maiores accusamus commodi magni nobis eos molestias perferendis minus quibusdam.
+            </p>
+            <div class="project__description--links">
+                <a href="#" class="project__description--link">
+                   <i class="fa-brands fa-github"></i> 
+                </a>
+                <a href="#" class="project__description--link">
+                   <i class="fas fa-link"></i> 
+                </a>
+            <li class="project"><div class="project__wrapper">
+                <img src="./assets/blinker mockup.png" class="project__img" alt=""/>
+                <div class="project__wrapper--bg"></div>
+        <div class="project__description">
+            <h3 class="project__description--title">
+                Car Sales Project
+            </h3>
+            <h4 class="project__description--sub-title">
+                HTML, CSS, JavaScript, Vue, Vuex
+            </h4>
+            <p class="project__description--para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum atque, facere quo cupiditate laborum veniam doloremque provident suscipit ea labore accusamus illo unde quas. Quasi, voluptatibus sed quaerat in possimus maiores accusamus commodi magni nobis eos molestias perferendis minus quibusdam.
+            </p>
+            <div class="project__description--links">
+                <a href="#" class="project__description--link">
+                   <i class="fa-brands fa-github"></i> 
+                </a>
+                <a href="#" class="project__description--link">
+                   <i class="fas fa-link"></i> 
+                </a>
+            <li class="project"><div class="project__wrapper">
+                <img src="./assets/blinker mockup.png" class="project__img" alt=""/>
+                <div class="project__wrapper--bg"></div>
+        <div class="project__description">
+            <h3 class="project__description--title">
+                Car Sales Project
+            </h3>
+            <h4 class="project__description--sub-title">
+                HTML, CSS, JavaScript, Vue, Vuex
+            </h4>
+            <p class="project__description--para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum atque, facere quo cupiditate laborum veniam doloremque provident suscipit ea labore accusamus illo unde quas. Quasi, voluptatibus sed quaerat in possimus maiores accusamus commodi magni nobis eos molestias perferendis minus quibusdam.
+            </p>
+            <div class="project__description--links">
+                <a href="#" class="project__description--link">
+                   <i class="fa-brands fa-github"></i> 
+                </a>
+                <a href="#" class="project__description--link">
+                   <i class="fas fa-link"></i> 
+                </a>
+            </div>
+            </div>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<footer>
+    <div class="container">
+   <div class="row footer__row">
+
+  
+        <figure>
+            <img class="footer__logo--img" src="./assets/logo.svg" alt="">
+        </figure>
+        <div class="footer__social--list">
+            <a href="#" class=
+            "footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+            "> 
+        GitHub
+            </a>
+            <a href="#" class=
+            "footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+            "> 
+        LinkedIn
+            </a>
+            <a href="#" class=
+            "footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+            "> 
+        Contact
+            </a>
+            <a href="#" class=
+            "footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+            "> 
+        Resume
+            </a>
+        </div>
+        <div class="footer__copyright">Copyright © 2025 Kyle Atkins</div>
+    </div>
+     </div>
+</footer>
+  </body>
 </html>
