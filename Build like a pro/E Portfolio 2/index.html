@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/cfa1b39128.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  <script src="../index.js" defer></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -23,7 +23,7 @@
 
 
     <!-- NAV BAR -->
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img id="personal-logo" src="./assets/logo.svg" alt="" />
@@ -45,14 +45,14 @@
             >
           </li>
 
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Contacts</a
+              >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -68,13 +68,13 @@
           <h1 class="title">Hey</h1>
           <h1 class="title green">I'm Kyle</h1>
           <p class="header__para">
-            I'm a <b class="green">Frontend End Software Engineer</b> with a
+            I am <b class="green">Software Engineer</b> with a
             passion for creating beautiful and functional user interfaces. I
             love to learn new technologies and improve my skills. I'm currently
             looking for new opportunities to grow and make an impact in the tech
             world.
             <br />
-            Here is more <b class="green">about me!</b>
+            Here is more <b class="green click" onclick="toggleModal()">about me!</b>
           </p>
 
           <!-- SOCIALS -->
@@ -103,7 +103,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -117,7 +117,7 @@
         <h3 class="modal__title modal__title--about">Here's a bit about me</h3>    
         <h4 class="modal__sub-title modal__sub-title--about">Software Engineer</h4>
         <p class="modal__para">
-            My name is Kyle Atkins, I'm a 24-year-old <b class="green">Software Engineer </b>with a strong background in <b class="green">HTML, CSS, JavaScript, and React.</b> I've always had a <b class="green">passion</b> for technology and coding, specifaclly because I am an avid gamer which led me into software development. 
+            My name is Kyle Atkins, I'm a 24-year-old <b class="green">Software Engineer </b>with a strong background in <b class="green">HTML, CSS, JavaScript, and React.</b> I've always had a <b class="green">passion</b> for technology and coding, specifically because I am an avid gamer which led me into software development. 
        <br>
             Now, I'm exploring <b class="green">new career opportunities</b> where I can apply my skills in fresh and meaningful ways. This E-Portfolio showcases <b class="green"> my experience, projects, and the journey</b> that brought me here as I take the <b class="green">next step</b> in my professional career.
         </p>
@@ -141,6 +141,7 @@
             </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
@@ -150,15 +151,15 @@
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input class="input" name="user__name" type="text" ></input>
+              <input class="input" name="user_name" type="text" required></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input" name="user__email" type="email" ></input>
+              <input class="input" name="user_email" type="email" required></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
-              <textarea class="input" name="message" type="text" ></textarea>
+              <textarea class="input" name="message" type="text" required></textarea>
             </div>
             <button id="contact__submit" class="form__submit">
               Send it my way!
@@ -171,8 +172,18 @@
             Thanks for the message! I look foward to connecting with you soon.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
+
+<img src="./assets/semi circle.svg" class="shape shape--0">
+<img src="./assets/circle.svg" class="shape shape--1">
+<img src="./assets/squiggly.svg" class="shape shape--2">
+<img src="./assets/circle.svg" class="shape shape--3">
+<img src="./assets/triangle.svg" class="shape shape--4">
+<img src="./assets/circle.svg" class="shape shape--5">
+<img src="./assets/squiggly.svg" class="shape shape--6">
+<img src="./assets/circle.svg" class="shape shape--7">
+<img src="./assets/semi circle.svg" class="shape shape--8">
+
     </section>
 
 
