@@ -29,6 +29,28 @@ function toggleContrast() {
 }
 
 
+
+const mailBtn = document.querySelector('.mail__btn');
+const footer = document.querySelector('footer');
+
+function checkMailBtnOverlap() {
+  const btnRect = mailBtn.getBoundingClientRect();
+  const footerRect = footer.getBoundingClientRect();
+
+  // Check if the button's bottom is below the footer's top
+  if (btnRect.bottom > footerRect.top) {
+    mailBtn.classList.add('invert');
+  } else {
+    mailBtn.classList.remove('invert');
+  }
+}
+
+window.addEventListener('scroll', checkMailBtnOverlap);
+window.addEventListener('resize', checkMailBtnOverlap);
+
+
+
+
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
